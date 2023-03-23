@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Pelican PPH | Alfredo Recinos</title>
+  <title>Pelican PPH | Workshop Alfredo Recinos</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,8 +35,37 @@
         </div>
         <!-- Botones -->
         <div class="buttons-box d-flex flex-column ms-xl-2 order-2 order-xl-3">
-          <button class="btn btn-primary-color mb-2 text-uppercase btn-header">Agent Demo</button>
-          <button class="btn btn-green-color text-uppercase btn-header">Player Demo</button>
+          <!-- Botón Agent Demo -->
+          <button class="btn btn-primary-color mb-2 text-uppercase btn-header" type="button" data-tab-control="agentDemos" aria-expanded="false" aria-controls="agentDemos">Agent Demo</button>
+          <div id="agentDemos" class="mb-2" data-tab-content="agentDemos" class="tab-content demo-container" aria-hidden="true">
+              <a href="https://adm.playpelican.ag/login?auth=ZEhKNWNHVnNhV05oYmc9PSU9JWNHVnNhV05oYmc9PQ==" target="_blank" rel="noopener" class="btn btn-md text-uppercase">New Site</a>
+              <form target="_blank" action="//agents.playpelican.bet/AgentSiteV2/processlogin.aspx" method="post" id="registrationForm" name="aspnetForm">
+              <div class="line-wrap-form bottommargin" id="input_username-yellow" style="display:none;">
+              <input name="Account" placeholder="TRYPELICAN" class="form-control not-dark" value="TRYPELICAN" readonly="" type="text">
+              </div>
+              <div class="line-wrap-form bottommargin" id="input_password-yellow" style="display:none;">
+              <input name="Password" placeholder="PELICAN" class="form-control not-dark" value="PELICAN" readonly="" type="password">
+              </div>
+              <button type="submit" class="btn btn-md text-uppercase">Classic Site</button>
+              </form>
+          </div>
+          <!-- Botón Player Demo -->
+          <button class="btn btn-green-color text-uppercase btn-header" data-tab-control="playerDemos" aria-expanded="false" aria-controls="playerDemos">Player Demo</button>
+          <div id="playerDemos" data-tab-content="playerDemos" class="tab-content demo-container" aria-hidden="true" style="overflow: hidden; max-height: 0px; visibility: hidden;">
+            <a href="https://playpelican.ag/demo?access=UEVMSUNBTjIwOmVuOm1haW5CZXRzbGlw" target="_blank" rel="noopener" class="btn mb-2  text-uppercase mt-2">New Site</a>
+            <form target="_blank" action="//wager.playpelican.bet/DefaultLogin.aspx" method="post" id="registrationForm3">
+            <input name="siteID" id="siteID" value="719" type="hidden">
+            <input name="errorURL" value="http://www.playpelican.bet/?login-error" type="hidden">
+            <div class="line-wrap-form bottommargin" id="input_username" style="display:none;">
+            <input name="account" placeholder="test1" class="username form-control not-dark" value="pelican20" readonly="" type="text">
+            </div>
+            <div class="line-wrap-form bottommargin" id="input_password" style="display:none;">
+            <input name="password" placeholder="pph11" class="password form-control not-dark" value="pelican" readonly="" type="password">
+            </div>
+            <button type="submit" class="btn mb-2 text-uppercase">Classic Site</button>
+            </form>
+          </div>
+
         </div>
   
       </div>
@@ -144,6 +173,7 @@
 
 
 
+<script src="js/script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
